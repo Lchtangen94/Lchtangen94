@@ -1,7 +1,26 @@
 {
     "settings": {
-        "name": "VS Code",
-        "version": "1.0.0",
-        "theme": "dark plus"
+        "editor.tabSize": 4,
+        "editor.wordWrap": "on",
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "workbench.colorTheme": "Default Dark+",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.shellArgs.linux": [
+            "-l"
+        ],
+        "editor.minimap.enabled": false,
+        "editor.rulers": [
+            80,
+            120
+        ],
+        "editor.codeLens": false,
+        "files.exclude": {
+            "**/.git": true,
+            "**/.DS_Store": true,
+            "**/node_modules": true
+        },
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
     }
 }
