@@ -21,6 +21,15 @@
             "**/node_modules": true
         },
         "files.trimTrailingWhitespace": true,
-        "files.insertFinalNewline": true
-    }
-}
+        "files.insertFinalNewline": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+        }
+    },  "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+
+        //access the terminal in the container by pressing Ctrl+` (Windows, Linux) or Cmd+` (macOS). You can also open the terminal by selecting View > Terminal from the menu bar.
+        
+        }
