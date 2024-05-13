@@ -1,10 +1,26 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"forwardPorts": [3000],
+	"postCreateCommand": "echo 'Container has been created!'",
+	"workspaceFolder": "/workspace",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"GitHub.copilot"
-			]
+				"GitHub.copilot",
+				"ms-python.python",
+				"ms-vscode.js-debug",
+				"ms-vscode.vscode-typescript-tslint-plugin",
+				"GitHub.copilot-chat"
+			],
+			"settings": {
+				"python.pythonPath": "/usr/local/bin/python",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+				"editor.formatOnSave": true,
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "always"
+				}
+			}
 		}
 	}
 }
